@@ -1,5 +1,5 @@
 # Things to do in Devon
 
-## [Blackdown Hills](BlackdownHills.md)
+## [Blackdown Hills](./BlackdownHills.md)
 
-## [Dartmoor](Dartmoor.md)
+## [Dartmoor](./Dartmoor.md)

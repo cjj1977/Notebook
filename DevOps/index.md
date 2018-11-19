@@ -1,14 +1,16 @@
 # DevOps
 
-## What is DevOps?
+## What is DevOps
 
 It is a set of working **practices** centred on development of code and delivery of that code to a live "production" environment. This can include traditional application development as well as infrastructure deployment automation ("Infrastructure As Code" or IAC), configuration management, etc.
 
 It grew out of Agile software development movement as a **culture** of collaboration between Dev + Ops, as a means of resolving the often conflicting aims of software development and service operations:
-  * Dev = **Speed** of feature releases, etc.
-  * Ops = **Stability** of service
+
+* Dev = **Speed** of feature releases, etc.
+* Ops = **Stability** of service
 
 It is not:
+
 * A standard
 * A job title
 * A set of tools
@@ -25,30 +27,30 @@ In DevOps teams, all share same goals, including speed of delivery & stability o
 
 There are myriad tools available to support DevOps work. The following web page lists many of the commonly used ones:
 
-* https://xebialabs.com/periodic-table-of-devops-tools
+* [XebiaLabs' periodic table of DevOps](https://xebialabs.com/periodic-table-of-devops-tools)
 
-### Continuous Integration, Delivery & Deployment
+## Continuous Integration, Delivery & Deployment
 
-#### Continuous (Build) Integration
+### Continuous (Build) Integration
 
 * Automated build and testing
 * Produces an artefact (package) that can be deployed
 
-#### Continuous Delivery
+### Continuous Delivery
 
 Continuously maintaining code in a deployable state
 
-#### Continuous Deployment
+### Continuous Deployment
 
 Frequently deploying small changes to production
 The more often you deploy the better (usually)
 
-#### Rollback
+### Rollback
 
 Easy to roll back to a known-good version
 Problems can be patched and the new version re-deployed
 
-#### Tools
+### CI Tools
 
 * Tools used often based on programming language:
 
@@ -61,15 +63,15 @@ Problems can be patched and the new version re-deployed
 | Jenkins | Server-side CI builds |
 | TravisCI | Server-side CI, esp. with GitHub |
 | Bambooo | Server-side CI, esp. with Jira |
+| VS Team Services | |
 
-
-### Infrastructure As Code (IaC)
+## Infrastructure As Code (IaC)
 
 Automate the creation of (virtual) servers, containers, etc.
 
 Configuration files held in source control and use automation to build the server/container/etc. using that configuration file.
 
-### Configuration Management
+## Configuration Management
 
 maintaining and changing the state of pieces of infrastructure in a consistent, maintainable and stable way
 
@@ -81,7 +83,7 @@ Configuration Management complements & is enabled by Infrastructure-as-code tech
 **Procedural** configuration:
   Write scripts to configure target machines
 
-#### Tools
+### Configuration Tools
 
 | Tool | Model | Description |
 | --: | :-: | :-- |
@@ -89,9 +91,9 @@ Configuration Management complements & is enabled by Infrastructure-as-code tech
 | Ansible Tower | Centralized | Declarative configuration |
 | Chef | Server & Agent | Procedural configuration |
 | Puppet | Server & Agent | Declarative configuration |
-| Salt | Server & Agent | Event-driven automation | 
+| Salt | Server & Agent | Event-driven automation |
 
-### Monitoring
+## Monitoring
 
 * Infrastructure monitoring
   * CPU
@@ -106,7 +108,7 @@ Configuration Management complements & is enabled by Infrastructure-as-code tech
   * Elastic (ELK)
 * Analytics
 
-#### Tools
+### Monitoring Tools
 
 | Tool | Target | Description |
 | --: | :-: | :-- |
@@ -115,13 +117,13 @@ Configuration Management complements & is enabled by Infrastructure-as-code tech
 | NewRelic | Infrastructure | |
 | SenSu | Infrastructure | |
 
-### Orchestration
+## Orchestration
 
 Supports processes or workflows, e.g. provisioning
 
 See [page on containerization](./Containers.md)
 
-#### Tools
+### Orchestration Tools
 
 | Tool | Description |
 | --: | :-: | :-- |
@@ -129,8 +131,3 @@ See [page on containerization](./Containers.md)
 | Kubernetes | |
 | ZooKeeper | |
 | Terraform | |
-
-
-### Microservices
-
- Isn't this really App Architecture rather than DevOps itself?
